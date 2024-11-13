@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter/Search Component</title>
+    <style>
+      /* Basic Reset and Body Styles */
+      body {
+        font-family: "Inter variant0", Tofu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f8f9fb;
+      }
+
+      /* Filter/Search Container */
+      .filter-search {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px #0000001a;
+        padding: 8px 16px;
+        width: 470px;
+      }
+
+      /* Search Input */
+      .filter-search .search-input {
+        flex: 1;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .filter-search .search-input:focus {
+        outline: none;
+        box-shadow: 0px 0px 4px #007bff66;
+      }
+
+      /* Filter Dropdown */
+      .filter-search .filter-dropdown {
+        margin: 0 8px;
+        padding: 8px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        color: #333;
+        background-color: #f1f3f5;
+      }
+
+      .filter-search .filter-dropdown:focus {
+        outline: none;
+        box-shadow: 0px 0px 4px #007bff66;
+      }
+
+      /* Search Button */
+      .filter-search .search-button {
+        padding: 8px 16px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .filter-search .search-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="filter-search">
+      <!-- Search Input -->
+      <input type="text" placeholder="Search..." class="search-input" />
+
+      <!-- Dropdown Filter -->
+      <select class="filter-dropdown">
+        <option value="">Filter by Category</option>
+        <option value="category1">Action</option>
+        <option value="category2">Comedy</option>
+        <option value="category3">Category 3</option>
+      </select>
+
+      <!-- Submit Button -->
+      <button class="search-button">Search</button>
+    </div>
+  </body>
+</html>
